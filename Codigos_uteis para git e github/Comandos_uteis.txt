@@ -1,0 +1,42 @@
+Comandos úteis do git
+git add nomedoarquivo
+Adiciona um arquivo ou pasta para o git
+
+git add -p
+Adiciona os arquivos visualizando as alterações. Esse comando não se aplica para arquivos novos.
+
+git commit -m ‘Mensagem descrevendo este commit’
+Commita todos os arquivos adicionados, usando a mensagem acima.
+
+git status
+Mostra o estado atual do git
+
+git push origin master
+Manda todos os commits locais na branch master para o servidor origin
+
+git push
+Shorthand para git push origin master
+
+git pull –rebase origin master
+Pega as alterações dos outros desenvolvedores
+
+git checkout -b ticket/999
+Cria uma nova branch chamada ticket/999
+
+git checkout master
+Volta para a branch master
+
+git checkout — nomedoarquivo
+Desfaz alterações locais no nome do arquivo (ou pasta).
+
+git merge ticket/999
+Mergeia a branch ticket/999 para a branch em que você está
+
+git submodule update –init
+Rodar na raiz do seu git, pega todas as alterações de um submódulo
+
+git cherry-pick númerodocommit
+Pega o commit que existe no repositório e joga na branch que você está.
+
+git remote -v
+Mostra o endereço do repositório externo (no Drupal.org por exemplo) ao qual o repositório que você está está ligado.
